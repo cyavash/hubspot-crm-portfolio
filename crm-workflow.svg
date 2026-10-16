@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="970" viewBox="0 0 1200 970" role="img" aria-labelledby="title desc">
+<title id="title">Kaplan Law CRM intake overview</title><desc id="desc">A high-level overview connecting enquiries, contact records, ownership, human intake review, booking and reporting.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9" fill="#ac9460"/></marker><style>text{font-family:Arial,Helvetica,sans-serif;fill:#18283b}.label{font-size:25px;font-weight:700}.body{font-size:18px;fill:#66717c}.line{fill:none;stroke:#ac9460;stroke-width:2;marker-end:url(#arrow)}.card{fill:white;stroke:#dedfdc;stroke-width:1.5;rx:14}</style></defs>
+<rect width="1200" height="970" fill="#f8f7f3"/>
+<text x="75" y="85" font-size="18" letter-spacing="4">KAPLAN LAW / CRM SAMPLE</text>
+<text x="75" y="150" font-size="44" font-weight="700">Clear records. Clear next steps.</text>
+<text x="75" y="197" font-size="21" fill="#66717c">An overview of intake, ownership and follow-up.</text>
+<rect class="card" x="75" y="260" width="470" height="145"/><text x="105" y="301" font-size="15" fill="#ac9460">01 / CAPTURE</text><text class="label" x="105" y="342">Enquiry received</text><text class="body" x="105" y="376">A structured starting point.</text>
+<rect class="card" x="655" y="260" width="470" height="145"/><text x="685" y="301" font-size="15" fill="#ac9460">02 / CRM</text><text class="label" x="685" y="342">Contact + enquiry record</text><text class="body" x="685" y="376">Connected records and pipeline visibility.</text>
+<path class="line" d="M545 332H650"/>
+<rect class="card" x="655" y="465" width="470" height="145"/><text x="685" y="506" font-size="15" fill="#ac9460">03 / OWNERSHIP</text><text class="label" x="685" y="547">Owner + intake review</text><text class="body" x="685" y="581">Clear accountability and human decisions.</text>
+<path class="line" d="M890 405V460"/>
+<rect class="card" x="75" y="465" width="470" height="145"/><text x="105" y="506" font-size="15" fill="#ac9460">04 / HANDOFF</text><text class="label" x="105" y="547">Follow-up + consultation</text><text class="body" x="105" y="581">A coordinated next step for the team.</text>
+<path class="line" d="M655 537H550"/>
+<path class="line" d="M310 610V670"/>
+<rect x="75" y="675" width="1050" height="160" rx="14" fill="#18283b"/><text x="110" y="723" font-size="15" style="fill:#d7c69f">05 / VISIBILITY</text><text x="110" y="766" font-size="27" font-weight="700" style="fill:white">Outcome + pipeline reporting</text><text x="110" y="803" font-size="19" style="fill:#d7dfe6">Understand what arrived, who owns it and what happens next.</text>
+<text x="75" y="909" font-size="15" fill="#66717c">Architecture overview. Sample only; no client records or production configuration.</text>
+</svg>
