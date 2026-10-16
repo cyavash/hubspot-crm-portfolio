@@ -86,6 +86,14 @@ HubSpot layouts and custom modules with native JavaScript, semantic structure an
 
 [Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/skopenow.html) · [Case and role](skopenow.md) · [Code](skopenow.html)
 
+## Reusable development components
+
+[![HubL Component Studio](components/images/component-studio.webp)](https://cyavash.github.io/hubspot-crm-portfolio/components/preview.html)
+
+**[HubL component package](components/hubspot/) · [Service cards](components/hubspot/modules/service-summary.module/) · [FAQ](components/hubspot/modules/faq.module/) · [Keyboard tabs](components/hubspot/modules/content-tabs.module/)**
+
+Every module has a screenshot, live preview and source link. Also explore the **[native JavaScript UI](native-ui/)**, **[WordPress component](WORDPRESS.md)** and **[HubSpot email designs](EMAIL.md)**.
+
 ## Engineering
 
 - [Native UI reference](native-ui/): scoped disclosures, keyboard tabs, search, filtering, menus and user-controlled carousels without jQuery.
@@ -94,3 +102,4 @@ HubSpot layouts and custom modules with native JavaScript, semantic structure an
 - [Validation and limits](ENGINEERING.md).
 
 Public previews are reference builds, separate from client production websites. Original repository histories remain intact.
+

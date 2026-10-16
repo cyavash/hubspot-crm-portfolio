@@ -1,0 +1,23 @@
+<section
+  class="sz-section sz-tabs"
+  data-sz-tabs
+  aria-label="{{ module.heading|escape_attr }}"
+>
+  <h2>{{ module.heading|escape_html }}</h2>
+  <div
+    class="sz-tabs__nav"
+    data-sz-tablist
+    hidden
+    aria-label="{{ module.heading|escape_attr }}"
+  >
+    {% for item in module.tabs %}
+    <button type="button" data-sz-tab>{{ item.title|escape_html }}</button>
+    {% endfor %}
+  </div>
+  {% for item in module.tabs %}
+  <section class="sz-tabs__panel" data-sz-panel>
+    <h3>{{ item.title|escape_html }}</h3>
+    <p>{{ item.description|escape_html }}</p>
+  </section>
+  {% endfor %}
+</section>

@@ -1,0 +1,15 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Component landing page
+-->
+{% extends './layouts/base.html' %} {% block body %}
+<header class="sz-hero">
+  <p class="sz-eyebrow">CONNECTED CUSTOMER EXPERIENCES</p>
+  <h1>Clear content. Reusable components.</h1>
+  <p>A flexible starting point for service pages and campaign landing pages.</p>
+</header>
+{% module 'services' path='../modules/service-summary', label='Service summary'
+%} {% module 'content_tabs' path='../modules/content-tabs', label='Content tabs'
+%} {% module 'faq' path='../modules/faq', label='Frequently asked questions' %}
+{% endblock body %}

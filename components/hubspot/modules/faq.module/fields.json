@@ -1,0 +1,50 @@
+[
+  {
+    "name": "heading",
+    "label": "Section heading",
+    "type": "text",
+    "required": true,
+    "default": "Common questions"
+  },
+  {
+    "name": "questions",
+    "label": "Questions",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 12,
+      "default": 3,
+      "sorting_label_field": "questions.question"
+    },
+    "children": [
+      {
+        "name": "question",
+        "label": "Question",
+        "type": "text",
+        "required": true,
+        "default": "Question"
+      },
+      {
+        "name": "answer",
+        "label": "Answer",
+        "type": "text",
+        "required": true,
+        "default": "Answer"
+      }
+    ],
+    "default": [
+      {
+        "question": "Can the content be edited in HubSpot?",
+        "answer": "Yes. Each module exposes named fields for headings, items and supporting copy."
+      },
+      {
+        "question": "Does the FAQ require JavaScript?",
+        "answer": "No. It uses native disclosure elements and remains usable without scripting."
+      },
+      {
+        "question": "Can these modules appear more than once?",
+        "answer": "Yes. Each instance operates independently, including keyboard navigation in the tabs."
+      }
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HubL Component Studio | Siavash Zahir</title>
+    <meta
+      name="description"
+      content="Reusable HubSpot components: service cards, native FAQ disclosures and keyboard-accessible tabs. Explore the live interface and inspect the HubL source."
+    />
+    <link rel="stylesheet" href="hubspot/css/main.css" />
+    <script src="hubspot/modules/content-tabs.module/module.js" defer></script>
+  </head>
+  <body>
+    <a class="sz-skip" href="#main-content">Skip to content</a>
+    <main id="main-content" class="sz-page">
+      <header class="sz-hero">
+        <p class="sz-eyebrow">HUBSPOT DEVELOPMENT / COMPONENT STUDIO</p>
+        <h1>Reusable by design.</h1>
+        <p>
+          Editable HubL components, semantic markup and native interactions.
+          Built for clear content and a practical handover.
+        </p>
+        <p>
+          <a
+            href="https://github.com/cyavash/hubspot-crm-portfolio/tree/main/components/hubspot"
+            >Inspect the HubL source ↗</a
+          >
+          · <a href="../index.html">Project studio ↗</a>
+        </p>
+      </header>
+      <section id="services" class="sz-section" aria-label="Services">
+        <h2>How we can help</h2>
+        <ul class="sz-grid">
+          <li class="sz-card">
+            <h3>CRM architecture</h3>
+            <p>Clear pipelines, reliable data and consistent ownership.</p>
+          </li>
+          <li class="sz-card">
+            <h3>Workflow automation</h3>
+            <p>Connected systems and dependable follow-up.</p>
+          </li>
+          <li class="sz-card">
+            <h3>Website development</h3>
+            <p>Reusable content and practical editing controls.</p>
+          </li>
+        </ul>
+      </section>
+      <section
+        id="tabs"
+        class="sz-section sz-tabs"
+        data-sz-tabs
+        aria-label="Delivery process"
+      >
+        <h2>A considered delivery process</h2>
+        <div
+          class="sz-tabs__nav"
+          data-sz-tablist
+          hidden
+          aria-label="Delivery stages"
+        >
+          <button type="button" data-sz-tab>Plan</button
+          ><button type="button" data-sz-tab>Build</button
+          ><button type="button" data-sz-tab>Validate</button>
+        </div>
+        <section class="sz-tabs__panel" data-sz-panel>
+          <h3>Plan</h3>
+          <p>Define the content structure, ownership and visitor journey.</p>
+        </section>
+        <section class="sz-tabs__panel" data-sz-panel>
+          <h3>Build</h3>
+          <p>
+            Implement reusable components with semantic HTML and clear editing
+            controls.
+          </p>
+        </section>
+        <section class="sz-tabs__panel" data-sz-panel>
+          <h3>Validate</h3>
+          <p>
+            Check keyboard access, responsive behavior and practical handover.
+          </p>
+        </section>
+      </section>
+      <section id="faq" class="sz-section sz-faq" aria-label="Common questions">
+        <h2>Common questions</h2>
+        <details>
+          <summary>Can the content be edited in HubSpot?</summary>
+          <p>
+            Yes. Each module exposes named fields for headings, items and
+            supporting copy.
+          </p>
+        </details>
+        <details>
+          <summary>Does the FAQ require JavaScript?</summary>
+          <p>
+            No. It uses native disclosure elements and remains usable without
+            scripting.
+          </p>
+        </details>
+        <details>
+          <summary>Can these modules appear more than once?</summary>
+          <p>
+            Yes. Each instance operates independently, including keyboard
+            navigation in the tabs.
+          </p>
+        </details>
+      </section>
+      <footer>
+        <p>Siavash Zahir · HubSpot Solutions Architect &amp; Developer</p>
+        <p>
+          This static preview demonstrates the component interface. The HubL
+          package requires validation in a HubSpot sandbox before production
+          use.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

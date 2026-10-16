@@ -1,0 +1,12 @@
+<section
+  class="sz-section sz-faq"
+  aria-label="{{ module.heading|escape_attr }}"
+>
+  <h2>{{ module.heading|escape_html }}</h2>
+  {% for item in module.questions %}
+  <details>
+    <summary>{{ item.question|escape_html }}</summary>
+    <p>{{ item.answer|escape_html }}</p>
+  </details>
+  {% endfor %}
+</section>

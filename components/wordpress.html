@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WordPress Service Summary | Siavash Zahir</title>
+    <meta
+      name="description"
+      content="Visual reference for a portable WordPress service summary shortcode."
+    />
+    <link rel="stylesheet" href="hubspot/css/main.css" />
+    <style>
+      .reference-nav {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+      .reference-nav a {
+        color: #285b47;
+      }
+      .reference-surface {
+        padding: 2rem;
+        border: 1px solid #d8e3dc;
+        border-radius: 1rem;
+        background: #f3f7f2;
+      }
+      .accordion-inner {
+        border-bottom: 1px solid #d8e3dc;
+        padding: 1rem 0;
+      }
+      .accordion-title {
+        border: 0;
+        background: none;
+        padding: 0.5rem 0;
+        font: inherit;
+        font-weight: 650;
+        color: #17332e;
+        cursor: pointer;
+        text-align: left;
+      }
+      .search_web_taps {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+      }
+      .search_web_taps a {
+        display: inline-block;
+        padding: 0.65rem 1rem;
+        border-radius: 2rem;
+        color: #17332e;
+        text-decoration: none;
+        border: 1px solid #d8e3dc;
+      }
+      .search_web_taps [aria-selected="true"] {
+        background: #285b47;
+        color: #fff;
+      }
+      .tab-content {
+        padding: 2rem;
+        border-radius: 1rem;
+        background: #f3f7f2;
+        border: 1px solid #d8e3dc;
+      }
+      .carousel .sz-card {
+        min-height: 12rem;
+      }
+      .native-carousel-controls {
+        justify-content: flex-start;
+      }
+      .sz-hero a {
+        color: #285b47;
+      }
+      .sz-section :is(h3, p) {
+        overflow-wrap: anywhere;
+      }
+    </style>
+    <link rel="stylesheet" href="../wordpress-service-summary.css" />
+  </head>
+  <body>
+    <a class="sz-skip" href="#main-content">Skip to content</a>
+    <main id="main-content" class="sz-page">
+      <nav class="reference-nav" aria-label="Reference navigation">
+        <a href="preview.html">HubL components</a
+        ><a href="../index.html">Project studio</a>
+      </nav>
+      <header class="sz-hero">
+        <p class="sz-eyebrow">WORDPRESS / REUSABLE COMPONENT</p>
+        <h1>One component. Clear purpose.</h1>
+        <p>
+          A portable service summary with scoped styling, escaped output and
+          simple editing controls.
+        </p>
+        <a
+          href="https://github.com/cyavash/hubspot-crm-portfolio/blob/main/wordpress-service-summary.php"
+          >Inspect the PHP source ↗</a
+        >
+      </header>
+      <div data-wp-preview>
+        <section
+          class="siavash-service-summary"
+          aria-labelledby="wordpress-service"
+        >
+          <h2 id="wordpress-service">Connected website and CRM</h2>
+          <p>
+            Clear lead capture, reliable ownership and consistent follow-up.
+          </p>
+          <a class="siavash-service-summary__link" href="../index.html"
+            >Explore the service<span aria-hidden="true"> →</span></a
+          >
+        </section>
+      </div>
+      <section class="sz-section">
+        <h2>Designed for straightforward editing</h2>
+        <ul class="sz-grid">
+          <li class="sz-card">
+            <h3>Plain text controls</h3>
+            <p>Named shortcode attributes for heading, description and link.</p>
+          </li>
+          <li class="sz-card">
+            <h3>Scoped styles</h3>
+            <p>
+              The host theme retains ownership of global typography and layout.
+            </p>
+          </li>
+          <li class="sz-card">
+            <h3>Safe output</h3>
+            <p>Escaped attributes, text and URLs, with unique heading IDs.</p>
+          </li>
+        </ul>
+        <p>
+          This is the component's static visual reference. WordPress runtime
+          behavior requires validation in a WordPress sandbox.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

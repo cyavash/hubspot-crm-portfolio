@@ -1,0 +1,70 @@
+[
+  {
+    "name": "heading",
+    "label": "Section heading",
+    "type": "text",
+    "required": true,
+    "default": "How we can help"
+  },
+  {
+    "name": "services",
+    "label": "Services",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 12,
+      "default": 3,
+      "sorting_label_field": "services.title"
+    },
+    "children": [
+      {
+        "name": "title",
+        "label": "Title",
+        "type": "text",
+        "required": true,
+        "default": "Service"
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "type": "text",
+        "required": true,
+        "default": "A concise explanation of the service."
+      },
+      {
+        "name": "link_text",
+        "label": "Link text",
+        "type": "text",
+        "default": "Explore service"
+      },
+      {
+        "name": "link",
+        "label": "Link",
+        "type": "link",
+        "supported_types": ["EXTERNAL", "CONTENT", "EMAIL_ADDRESS"],
+        "default": {
+          "url": {
+            "type": "EXTERNAL",
+            "href": ""
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+        }
+      }
+    ],
+    "default": [
+      {
+        "title": "CRM architecture",
+        "description": "Clear pipelines, reliable data and consistent ownership."
+      },
+      {
+        "title": "Workflow automation",
+        "description": "Connected systems and dependable follow-up."
+      },
+      {
+        "title": "Website development",
+        "description": "Reusable content and practical editing controls."
+      }
+    ]
+  }
+]

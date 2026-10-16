@@ -2,6 +2,10 @@
 
 A portable shortcode component with scoped CSS, output escaping and unique heading IDs. This is a public code reference, separate from the client website's production theme.
 
+![WordPress service summary preview](components/images/wordpress.webp)
+
+**[Live visual preview](https://cyavash.github.io/hubspot-crm-portfolio/components/wordpress.html) · [PHP](wordpress-service-summary.php) · [CSS](wordpress-service-summary.css)**
+
 ## Try it in a WordPress sandbox
 
 1. Put `wordpress-service-summary.php` and `wordpress-service-summary.css` in one plugin directory.

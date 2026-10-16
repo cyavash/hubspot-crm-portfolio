@@ -1,0 +1,37 @@
+<section class="sz-section" aria-label="{{ module.heading|escape_attr }}">
+  <h2>{{ module.heading|escape_html }}</h2>
+  <ul class="sz-grid">
+    {% for item in module.services %}
+    <li class="sz-card">
+      <h3>{{ item.title|escape_html }}</h3>
+      {% if item.description %}
+      <p>{{ item.description|escape_html }}</p>
+      {% endif %} {% if item.link.url.href and item.link_text %} {% set href =
+      item.link.url.href %} {% if item.link.url.type == 'EMAIL_ADDRESS' %}{% set
+      href = 'mailto:' ~ href %}{% endif %} {% set rel = 'noopener noreferrer'
+      if item.link.open_in_new_tab else '' %} {% if item.link.no_follow %}{% set
+      rel = rel ~ ' nofollow' %}{% endif %}
+      <a
+        href="{{ href|escape_url }}"
+        {%
+        if
+        item.link.open_in_new_tab
+        %}
+        target="_blank"
+        {%
+        endif
+        %}{%
+        if
+        rel
+        %}
+        rel="{{ rel|trim|escape_attr }}"
+        {%
+        endif
+        %}
+        >{{ item.link_text|escape_html }}</a
+      >
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

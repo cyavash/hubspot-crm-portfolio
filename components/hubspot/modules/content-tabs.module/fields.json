@@ -1,0 +1,50 @@
+[
+  {
+    "name": "heading",
+    "label": "Section heading",
+    "type": "text",
+    "required": true,
+    "default": "A considered delivery process"
+  },
+  {
+    "name": "tabs",
+    "label": "Tabs",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 12,
+      "default": 3,
+      "sorting_label_field": "tabs.title"
+    },
+    "children": [
+      {
+        "name": "title",
+        "label": "Tab title",
+        "type": "text",
+        "required": true,
+        "default": "Stage"
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "type": "text",
+        "required": true,
+        "default": "Describe this stage."
+      }
+    ],
+    "default": [
+      {
+        "title": "Plan",
+        "description": "Define the content structure, ownership and visitor journey."
+      },
+      {
+        "title": "Build",
+        "description": "Implement reusable components with semantic HTML and clear editing controls."
+      },
+      {
+        "title": "Validate",
+        "description": "Check keyboard access, responsive behavior and practical handover."
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "label": "Content tabs",
+  "is_available_for_new_content": true,
+  "global": false,
+  "host_template_types": ["PAGE", "BLOG_LISTING", "BLOG_POST"]
+}

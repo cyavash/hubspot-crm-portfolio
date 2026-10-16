@@ -1,0 +1,23 @@
+<!-- templateType: none -->
+<!doctype html>
+<html lang="{{ html_lang|default('en')|escape_attr }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page_meta.html_title|default(content.name)|escape_html }}</title>
+    {% if page_meta.meta_description %}
+    <meta
+      name="description"
+      content="{{ page_meta.meta_description|escape_attr }}"
+    />
+    {% endif %} {{ require_css(get_asset_url('../../css/main.css')) }} {{
+    standard_header_includes }}
+  </head>
+  <body>
+    <a class="sz-skip" href="#main-content">Skip to content</a>
+    <main id="main-content" class="sz-page">
+      {% block body %}{% endblock body %}
+    </main>
+    {{ standard_footer_includes }}
+  </body>
+</html>
