@@ -11,3 +11,65 @@
 .component-cover-footer { display:flex; gap:12px; flex-wrap:wrap; font-size:clamp(8px,.85vw,11px); color:#426450; margin-top:18px; }
 .component-cover-footer span+span::before { content:"+"; margin-right:12px; color:#73917d; }
 @media(max-width:400px) { .component-cover { padding:20px; } .component-cover-grid { gap:6px; } .component-cover-grid>span { padding:12px 8px; } .component-cover>strong { margin-bottom:18px; } }
+
+/* Project covers use the current page content and original brand artwork. */
+.index-card>a:has(.project-cover),.index-card>a:has(.email-design-cover) { display:block; text-decoration:none; }
+.project-cover { container-type:inline-size; position:relative; aspect-ratio:1.5; overflow:hidden; border-bottom:1px solid #dedee9; isolation:isolate; }
+.functionly-cover { background:radial-gradient(ellipse at 85% 25%,#ddc9f4,transparent 60%),#eee9f5; }
+.startdeliver-cover { background:radial-gradient(ellipse at 80% 80%,#f6c8e3,transparent 65%),#e1e9ff; }
+.cover-desktop { position:absolute; width:84%; height:77%; top:10%; left:5%; background:white; border:1px solid #c8c9d4; border-radius:1.4cqw; box-shadow:0 3cqw 5cqw -3cqw #29214070; overflow:hidden; }
+.cover-toolbar { height:16%; display:flex; align-items:center; justify-content:space-between; gap:2cqw; padding:0 3cqw; background:white; color:#514c58; }
+.index-card .cover-brand-logo { display:block; width:21cqw; height:auto; aspect-ratio:auto; object-fit:contain; border:0; border-radius:0; }
+.cover-toolbar>span { font-size:1.25cqw; white-space:nowrap; }
+.cover-toolbar>i { font-size:1.25cqw; font-weight:700; font-style:normal; padding:1cqw 1.6cqw; background:#009bff; color:#082b43; border-radius:.5cqw; white-space:nowrap; }
+.cover-fn-hero { height:66%; display:grid; grid-template-columns:1.1fr 1fr; background:#f2ebf8; }
+.cover-fn-hero>div:first-child { padding:3.6cqw 2.5cqw 2cqw 3cqw; }
+.project-cover small { font-size:1.1cqw; font-weight:700; letter-spacing:.08em; }
+.cover-fn-hero small { color:#653b8d; }
+.project-cover strong { display:block; font-size:3.7cqw; line-height:1.1; letter-spacing:-.05em; margin:1.7cqw 0; }
+.project-cover em { font-style:normal; }
+.functionly-cover strong { color:#25232b; }
+.functionly-cover strong em { color:#653b8d; }
+.index-card .project-cover p { font-size:1.3cqw; line-height:1.65; margin:1.6cqw 0; color:#655673; }
+.cover-fn-hero b { font-size:1.25cqw; color:#210249; }
+.cover-functionly-art { background:linear-gradient(180deg,#21024900,#21024977),url(project-art/functionly-culture.webp) center/cover; }
+.cover-fn-footer { height:18%; display:flex; align-items:center; gap:3cqw; padding:0 3cqw; color:#292431; }
+.cover-fn-footer b { font-size:2cqw; }
+.cover-fn-footer>span { font-size:1.1cqw; color:#766a82; }
+.cover-phone { position:absolute; width:23%; height:73%; bottom:6%; right:4%; background:#fff; border:.7cqw solid #272333; border-radius:3cqw; box-shadow:0 2.5cqw 4cqw -2cqw #17102b99; overflow:hidden; padding-top:3cqw; }
+.cover-phone-speaker { position:absolute; top:.7cqw; left:33%; width:34%; height:.7cqw; border-radius:2cqw; background:#272333; }
+.index-card .cover-phone .cover-brand-logo { width:77%; height:auto; margin:0 auto 2cqw; }
+.phone-fn-copy { background:#f2ebf8; padding:2cqw 1.5cqw; }
+.cover-phone small { font-size:1cqw; }
+.cover-phone strong { font-size:2.4cqw; line-height:1.1; margin:1.2cqw 0; }
+.cover-phone .cover-functionly-art { height:40%; }
+.phone-bottom-label { display:block; font-size:1.5cqw; font-weight:700; padding:2cqw 1.4cqw; color:#342842; }
+.cover-sd-logo { font-size:2.2cqw; letter-spacing:-.06em; color:#00174f; white-space:nowrap; }
+.cover-sd-logo>span { font-weight:400; }
+.cover-sd-logo em { color:#c9007f; }
+.startdeliver-cover .cover-toolbar>i { color:white; background:#c9007f; }
+.cover-sd-hero { height:67%; display:grid; grid-template-columns:1.1fr 1fr; align-items:center; gap:1cqw; padding:1cqw 3cqw; background:radial-gradient(ellipse at 90% 15%,#eceeff,transparent 70%),#fff8fc; }
+.cover-sd-hero small { color:#0850fe; font-size:1cqw; }
+.startdeliver-cover strong { color:#00174f; }
+.startdeliver-cover strong em { color:#0850fe; }
+.cover-sd-hero strong { font-size:3.5cqw; margin:1.7cqw 0; }
+.index-card .cover-sd-hero p { color:#4c5c7a; font-size:1.15cqw; margin:1cqw 0; }
+.cover-sd-hero>div>b, .phone-sd-copy>b { display:inline-block; padding:.9cqw 1.6cqw; border-radius:.5cqw; color:white; background:#c9007f; font-size:1.2cqw; }
+.index-card .cover-sd-hero>img { display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; border:0; border-radius:0; }
+.cover-sd-outcomes { height:17%; display:flex; gap:7cqw; align-items:center; padding:0 3cqw; font-size:1.1cqw; color:#536280; }
+.cover-phone>.cover-sd-logo { display:block; text-align:center; font-size:1.8cqw; margin:0 0 2cqw; }
+.phone-sd-copy { padding:1cqw 1.5cqw; }
+.phone-sd-copy small { color:#0850fe; font-size:.85cqw; }
+.phone-sd-copy strong { font-size:2.3cqw; }
+.phone-sd-copy>b { font-size:1cqw; margin:.5cqw 0; }
+.index-card .cover-phone .phone-platform { width:92%; height:auto; aspect-ratio:auto; object-fit:contain; border:0; margin:2cqw auto 0; }
+.startdeliver-cover .phone-bottom-label { font-size:.85cqw; text-align:center; padding:1.5cqw .5cqw; }
+.email-design-cover { container-type:inline-size; position:relative; aspect-ratio:1.5; overflow:hidden; padding:6% 7% 0; background:radial-gradient(ellipse at 95% 0%,#ddd2ff,transparent 65%),#eaf1fb; border-bottom:1px solid #d7dfee; color:#182c50; }
+.email-cover-eyebrow { font-size:1.5cqw; font-weight:700; letter-spacing:.12em; display:block; }
+.email-design-cover>strong { display:block; font-size:4.8cqw; line-height:1.08; letter-spacing:-.04em; margin:2.3cqw 0 0; position:relative; z-index:1; }
+.email-design-cover>strong em { font-style:normal; color:#446fbd; }
+.email-cover-gallery { position:absolute; inset:43% 8% -14%; display:flex; gap:3%; align-items:start; }
+.index-card .email-cover-gallery>img { width:31.33%; height:100%; aspect-ratio:auto; object-fit:cover; object-position:top; border:1px solid #d4ddeb; border-radius:1cqw; box-shadow:0 2cqw 5cqw -2cqw #1c386a60; }
+.index-card .email-cover-gallery>img:first-child { margin-top:4cqw; transform:rotate(-5deg); }
+.index-card .email-cover-gallery>img:nth-child(2) { z-index:1; }
+.index-card .email-cover-gallery>img:last-child { margin-top:4cqw; transform:rotate(5deg); }
