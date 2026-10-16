@@ -12,7 +12,7 @@ CRM architecture, HubL development, WordPress, integrations and email systems. 1
 
 Service Hub architecture, multilingual support, knowledge sources and human escalation.
 
-[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/enveseur.html) · [Case and role](enveseur.md) · [Code](enveseur.html)
+[Case preview](https://cyavash.github.io/hubspot-crm-portfolio/enveseur.html) · [Case and role](enveseur.md) · [Code](enveseur.html)
 
 ## Functionly
 
@@ -28,7 +28,7 @@ Figma design, HubL development, reusable modules and connected lead capture.
 
 WordPress design and development connected to HubSpot CRM, lifecycle tracking and reporting.
 
-[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/databiologics.html) · [Case and role](databiologics.md) · [Code](databiologics.html)
+[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/databiologics.html) · [Case and role](databiologics.md) · [WordPress source](wordpress/databiologics)
 
 ## Building Brokers WA
 
@@ -36,7 +36,7 @@ WordPress design and development connected to HubSpot CRM, lifecycle tracking an
 
 A four-step qualification journey with HubSpot, automated follow-up and meeting booking.
 
-[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/bbwa.html) · [Case and role](bbwa.md) · [Code](bbwa.html)
+[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/bbwa.html) · [Case and role](bbwa.md) · [Qualification source](qualification.js)
 
 ## RMDY Academy
 
@@ -44,15 +44,15 @@ A four-step qualification journey with HubSpot, automated follow-up and meeting 
 
 Zapier and HubSpot intake matching, create/update controls and submission associations.
 
-[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/rmdy.html) · [Case and role](rmdy.md) · [Code](rmdy.html)
+[Case preview](https://cyavash.github.io/hubspot-crm-portfolio/rmdy.html) · [Case and role](rmdy.md) · [Code](rmdy.html)
 
-## Kaplan Law
+## Legal Intake CRM Example
 
 ![Kaplan Law preview](kaplan-law-preview.webp)
 
 A concise legal-services CRM workspace and intake handoff preview.
 
-[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/kaplan-law.html) · [Case and role](kaplan-law.md) · [Code](kaplan-law.html)
+[Case preview](https://cyavash.github.io/hubspot-crm-portfolio/kaplan-law.html) · [Case and role](kaplan-law.md) · [Code](kaplan-law.html)
 
 ## DataBiologics Quote
 

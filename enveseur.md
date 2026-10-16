@@ -1,21 +1,7 @@
 # Enveseur
 
-Service Hub & Breeze AI
+[Live preview](https://cyavash.github.io/hubspot-crm-portfolio/enveseur.html) · [Source](https://github.com/cyavash/hubspot-crm-portfolio/blob/main/enveseur.html)
 
-![Enveseur preview](enveseur-preview.webp)
+![Desktop and mobile preview](enveseur-preview.webp)
 
-**[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/enveseur.html) · [Source code](https://github.com/cyavash/hubspot-crm-portfolio/blob/main/enveseur.html) · [Portfolio](https://siavash.tech/)**
-
-Service Hub architecture, multilingual support, knowledge sources and human escalation.
-
-## My role
-
-Service Hub architecture and implementation, multilingual routing, Breeze knowledge sources, support ownership and Slack escalation.
-
-## Client results
-
-3 brands, 2 languages, 10 country branches and 1,200 monthly conversations. Median first human response: 4 hours → 55 minutes (77% reduction).
-
-## Public build
-
-The coded preview uses sample interface states. Private client records, workflow rules and credentials are excluded. Native JavaScript, responsive layouts, semantic markup, keyboard access and reduced-motion support are documented and checked.
+Service Hub, Breeze Customer Agent, multilingual support and technical escalation across 3 brands, 2 languages and 10 country branches. 1,200 monthly conversations; median first human response improved from 4 hours to 55 minutes. The case visual is a high-level process overview, not a client portal replica.

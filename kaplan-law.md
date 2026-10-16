@@ -1,17 +1,7 @@
-# Kaplan Law
+# Legal Intake CRM Example
 
-CRM intake & follow-up
+[Live preview](https://cyavash.github.io/hubspot-crm-portfolio/kaplan-law.html) · [Source](https://github.com/cyavash/hubspot-crm-portfolio/blob/main/kaplan-law.html)
 
-![Kaplan Law preview](kaplan-law-preview.webp)
+![Desktop and mobile preview](kaplan-law-preview.webp)
 
-**[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/kaplan-law.html) · [Source code](https://github.com/cyavash/hubspot-crm-portfolio/blob/main/kaplan-law.html) · [Portfolio](https://siavash.tech/)**
-
-A concise legal-services CRM workspace and intake handoff preview.
-
-## My role
-
-Public CRM interface reference: intake stages, record context and review ownership. This is a high-level sample, not a disclosed production implementation.
-
-## Public build
-
-The coded preview uses sample interface states. Private client records, workflow rules and credentials are excluded. Native JavaScript, responsive layouts, semantic markup, keyboard access and reduced-motion support are documented and checked.
+A high-level legal intake CRM portfolio example. It demonstrates stages, ownership and follow-up without claiming deployed client results or displaying client records.
