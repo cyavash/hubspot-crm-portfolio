@@ -1,0 +1,239 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Skopenow Workbench Product
+-->
+{% extends './layouts/base.html' %}
+{% block body %}
+{% module 'hero' path='../modules/hero', label='Workbench hero' %}
+<section aria-label="Research workflow" class="benefits">
+ <article>
+  <span>
+   01 / COLLECT
+  </span>
+  <h2>
+   Connect the evidence.
+  </h2>
+  <p>
+   Bring relevant public information into one research workspace.
+  </p>
+ </article>
+ <article>
+  <span>
+   02 / ANALYZE
+  </span>
+  <h2>
+   See the relationships.
+  </h2>
+  <p>
+   Review signals in context and identify what needs a closer look.
+  </p>
+ </article>
+ <article>
+  <span>
+   03 / REPORT
+  </span>
+  <h2>
+   Keep the context.
+  </h2>
+  <p>
+   Organize findings and supporting information for the next step.
+  </p>
+ </article>
+</section>
+<section class="capabilities" data-reveal="" id="capabilities">
+ <p class="eyebrow">
+  ONE WORKSPACE. A MORE CONNECTED VIEW.
+ </p>
+ <h2>
+  From scattered information
+  <br/>
+  to a structured investigation.
+ </h2>
+ <div aria-label="Workbench capabilities" class="capability-tabs" data-sz-tabs="">
+  <div aria-label="Workbench capabilities" class="tab-navigation" data-sz-tablist="" hidden="">
+   <button data-sz-tab="" type="button">
+    Data coverage
+   </button>
+   <button data-sz-tab="" type="button">
+    Analysis
+   </button>
+   <button data-sz-tab="" type="button">
+    Reporting
+   </button>
+  </div>
+  <div class="capability-layout">
+   <div class="panels">
+    <section data-sz-panel="">
+     <h3>
+      Research with broader context.
+     </h3>
+     <p>
+      Combine publicly available information from multiple sources rather than switching between disconnected tools.
+     </p>
+     <ul>
+      <li>
+       Entity-focused research
+      </li>
+      <li>
+       Consolidated public information
+      </li>
+      <li>
+       Supporting context for review
+      </li>
+     </ul>
+    </section>
+    <section data-sz-panel="">
+     <h3>
+      Make the next question clearer.
+     </h3>
+     <p>
+      Use automated processing and identity-resolution tools to surface relevant relationships and areas for further investigation.
+     </p>
+     <ul>
+      <li>
+       Connected research signals
+      </li>
+      <li>
+       AI-assisted analysis
+      </li>
+      <li>
+       Confidence-aware review
+      </li>
+     </ul>
+    </section>
+    <section data-sz-panel="">
+     <h3>
+      Carry the evidence forward.
+     </h3>
+     <p>
+      Keep findings organized with supporting details so research can be reviewed and communicated consistently.
+     </p>
+     <ul>
+      <li>
+       Structured findings
+      </li>
+      <li>
+       Source context
+      </li>
+      <li>
+       Exportable reports
+      </li>
+     </ul>
+    </section>
+   </div>
+   <img alt="Original Skopenow Workbench product interface graphic" height="440" loading="lazy" src="{{ get_asset_url('../images/skopenow-workbench.svg') }}" width="640"/>
+  </div>
+ </div>
+</section>
+<section class="workflow" data-reveal="" id="workflow">
+ <div>
+  <p class="eyebrow">
+   BUILT AROUND THE INVESTIGATION
+  </p>
+  <h2>
+   Less fragmentation.
+   <br/>
+   More useful context.
+  </h2>
+  <p>
+   Workbench connects collection, analysis and reporting in one product experience. Clear information hierarchy helps teams navigate complex capabilities without losing sight of their research question.
+  </p>
+ </div>
+ <ol>
+  <li>
+   <span>
+    01
+   </span>
+   <div>
+    <h3>
+     Define the entity
+    </h3>
+    <p>
+     Start with the person or business relevant to the investigation.
+    </p>
+   </div>
+  </li>
+  <li>
+   <span>
+    02
+   </span>
+   <div>
+    <h3>
+     Review the context
+    </h3>
+    <p>
+     Explore the available information and the relationships between findings.
+    </p>
+   </div>
+  </li>
+  <li>
+   <span>
+    03
+   </span>
+   <div>
+    <h3>
+     Document the findings
+    </h3>
+    <p>
+     Preserve supporting context for review and reporting.
+    </p>
+   </div>
+  </li>
+ </ol>
+</section>
+<section class="questions" data-reveal="" id="questions">
+ <div>
+  <p class="eyebrow">
+   A CLOSER LOOK
+  </p>
+  <h2>
+   The right product
+   <br/>
+   for your workflow.
+  </h2>
+ </div>
+ <div>
+  <details>
+   <summary>
+    What is Workbench designed for?
+   </summary>
+   <p>
+    Entity research using public information, with tools for analyzing and reporting findings about people and businesses.
+   </p>
+  </details>
+  <details>
+   <summary>
+    How does it fit into the wider platform?
+   </summary>
+   <p>
+    Workbench is part of Skopenow's product suite, alongside capabilities for network visualization, location-based research and risk signals.
+   </p>
+  </details>
+  <details>
+   <summary>
+    How can I assess the product?
+   </summary>
+   <p>
+    <a href="https://www.skopenow.com/contact">
+     Contact the Skopenow team
+    </a>
+    to discuss your requirements and request a product walkthrough.
+   </p>
+  </details>
+ </div>
+</section>
+<section class="closing" data-reveal="">
+ <p class="eyebrow">
+  SEE THE PRODUCT IN CONTEXT
+ </p>
+ <h2>
+  Bring your research
+  <br/>
+  into focus.
+ </h2>
+ <a class="button" href="https://www.skopenow.com/demo">
+  Request a walkthrough ↗
+ </a>
+</section>
+{% endblock body %}

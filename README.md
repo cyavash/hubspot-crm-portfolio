@@ -20,7 +20,7 @@ Service Hub architecture, multilingual support, knowledge sources and human esca
 
 Figma design, HubL development, reusable modules and connected lead capture.
 
-[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/functionly.html) · [Case and role](functionly.md) · [Code](functionly.html)
+[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/functionly.html) · [Case and role](functionly.md) · [HubL source](themes/functionly)
 
 ## DataBiologics
 
@@ -84,7 +84,7 @@ HubSpot CMS implementation with reusable modules, native navigation, accessible 
 
 HubSpot layouts and custom modules with native JavaScript, semantic structure and practical content editing.
 
-[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/skopenow.html) · [Case and role](skopenow.md) · [Code](skopenow.html)
+[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/skopenow.html) · [Case and role](skopenow.md) · [HubL source](themes/skopenow)
 
 ## Reusable development components
 

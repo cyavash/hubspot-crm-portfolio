@@ -1,0 +1,44 @@
+<section aria-label="Customer testimonials" class="testimonials" data-reveal="" data-sd-carousel="">
+ <div class="testimonial-heading">
+  <p class="eyebrow">
+   IN THEIR OWN WORDS
+  </p>
+  <h2>
+   Nice words.
+   <br/>
+   Real customer relationships.
+  </h2>
+  <p>
+   Customer feedback from the original StartDeliver website theme.
+  </p>
+ </div>
+ <div class="quote-stage">
+  {% for item in module.testimonials %}
+  <figure class="quote-card" data-sd-slide="">
+   <blockquote>
+    <p>
+     “{{ item.quote|escape_html }}”
+    </p>
+   </blockquote>
+   <figcaption>
+    <strong>
+     {{ item.name|escape_html }}
+    </strong>
+    <span>
+     {{ item.role|escape_html }} · {{ item.company|escape_html }}
+    </span>
+   </figcaption>
+  </figure>
+  {% endfor %}
+ </div>
+ <div class="quote-controls" data-sd-controls="" hidden="">
+  <button aria-label="Previous testimonial" data-sd-prev="" type="button">
+   ←
+  </button>
+  <p aria-atomic="true" aria-live="polite" data-sd-status="" role="status">
+  </p>
+  <button aria-label="Next testimonial" data-sd-next="" type="button">
+   →
+  </button>
+ </div>
+</section>

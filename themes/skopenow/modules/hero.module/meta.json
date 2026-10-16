@@ -1,0 +1,7 @@
+{
+  "label": "Workbench Hero",
+  "host_template_types": [
+    "PAGE"
+  ],
+  "is_available_for_new_content": true
+}

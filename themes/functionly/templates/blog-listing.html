@@ -1,0 +1,94 @@
+<!--
+templateType: blog_listing
+isAvailableForNewContent: true
+label: Functionly Editorial Listing
+-->
+{% extends './layouts/base.html' %}
+{% block body %}
+<section class="blog-intro">
+ <p class="eyebrow">
+  ORGINOMETRY / IDEAS FOR BETTER ORGANIZATIONS
+ </p>
+ <h1>
+  Better structures.
+  <br/>
+  <span>
+   Bigger possibilities.
+  </span>
+ </h1>
+ <p>
+  Explore organization design and the decisions that shape how teams work.
+ </p>
+</section>
+<section aria-label="Articles" class="blog-content">
+ <div class="filter-heading">
+  <h2>
+   Latest thinking
+  </h2>
+  <form data-blog-search="" role="search">
+   <label for="article-search">
+    Search loaded articles
+   </label>
+   <div>
+    <input id="article-search" type="search"/>
+    <button type="submit">
+     Search
+    </button>
+   </div>
+  </form>
+ </div>
+ <div class="filters" data-blog-filters="" hidden="">
+  <button aria-pressed="true" data-filter="all" type="button">
+   All articles
+  </button>
+ </div>
+ <p aria-live="polite" data-result-count="" role="status">
+  {{ contents|length }} articles
+ </p>
+ <div class="article-grid">
+  {% for post in contents %}
+  <article class="article-card" data-article="" data-category="all">
+   {% if post.featured_image %}
+   <a class="card-art" href="{{ post.absolute_url|escape_url }}">
+    <img alt="{{ post.featured_image_alt_text|default('')|escape_attr }}" height="675" loading="lazy" src="{{ post.featured_image|escape_url }}" width="1200"/>
+   </a>
+   {% endif %}
+   <div class="card-copy">
+    <h3>
+     <a href="{{ post.absolute_url|escape_url }}">
+      {{ post.name|escape_html }}
+     </a>
+    </h3>
+    {% if post.blog_post_author %}
+    <p class="byline">
+     {{ post.blog_post_author.display_name|escape_html }}
+    </p>
+    {% endif %}
+    <a class="read-link" href="{{ post.absolute_url|escape_url }}">
+     Read article ↗
+    </a>
+   </div>
+  </article>
+  {% endfor %}
+ </div>
+ <div class="empty-state" data-empty="" hidden="">
+  <h3>
+   No matching articles
+  </h3>
+  <button data-reset="" type="button">
+   Clear search
+  </button>
+ </div>
+ <nav aria-label="Blog pagination">
+  {% if last_page_num %}
+  <a href="{{ blog_page_link(last_page_num)|escape_url }}">
+   ← Previous page
+  </a>
+  {% endif %}{% if next_page_num %}
+  <a href="{{ blog_page_link(next_page_num)|escape_url }}">
+   Next page →
+  </a>
+  {% endif %}
+ </nav>
+</section>
+{% endblock body %}

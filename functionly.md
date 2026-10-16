@@ -1,21 +1,11 @@
 # Functionly
 
-HubSpot website & reusable modules
+[Live preview](https://cyavash.github.io/hubspot-crm-portfolio/functionly.html) · [Focused HubL source](themes/functionly)
 
-![Functionly preview](functionly-preview.webp)
+![Rendered preview](functionly-preview.webp)
 
-**[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/functionly.html) · [Source code](https://github.com/cyavash/Functionly) · [Portfolio](https://siavash.tech/)**
+My original work covered Figma design, HubSpot CMS development, reusable modules and connected CRM automation. Landing-page build time fell from 3 hours to 45 minutes, and lead assignment from 25 minutes to 2 minutes.
 
-Figma design, HubL development, reusable modules and connected lead capture.
+This focused refresh demonstrates the Orginometry blog listing and article format using original website artwork. Search, filters and an independently written article example demonstrate the layout. The matching HubL templates use native blog data, article metadata and server pagination.
 
-## My role
-
-Figma website design, HubSpot development, reusable HubL modules, forms and CRM automation.
-
-## Client results
-
-Landing-page build time: 3 hours → 45 minutes. Median lead assignment: 25 minutes → 2 minutes.
-
-## Public build
-
-The coded preview uses sample interface states. Private client records, workflow rules and credentials are excluded. Native JavaScript, responsive layouts, semantic markup, keyboard access and reduced-motion support are documented and checked.
+Static desktop/mobile accessibility and interaction checks pass. HubSpot compilation and editor validation remain outstanding.

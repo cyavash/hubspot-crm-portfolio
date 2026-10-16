@@ -6,11 +6,10 @@
     "node": ">=24"
   },
   "scripts": {
-    "check": "node --check studio.js && node --check quote.js && node --check native-ui/native-ui.js && node components/check.mjs",
-    "test": "node --test native-ui/native-ui.test.cjs quote.test.cjs components/tabs.test.cjs"
+    "check": "node --check studio.js && node --check quote.js && node --check native-ui/native-ui.js && node components/check.mjs && node --check startdeliver-interactions.js && node --check functionly-blog.js",
+    "test": "node --test native-ui/native-ui.test.cjs quote.test.cjs components/tabs.test.cjs startdeliver-interactions.test.cjs"
   },
   "devDependencies": {
     "jsdom": "26.1.0"
   }
 }
-

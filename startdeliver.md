@@ -8,7 +8,7 @@ HubSpot homepage design and development
 
 ## My role
 
-HubSpot theme development and custom modules. This refreshed homepage builds on the original theme's Customer Success messaging, blue and pink palette, hero, feature cards and integration section. The integration graphic is from the original theme. The current production website is a separate Framer implementation.
+HubSpot theme development and custom modules. This refreshed homepage builds on the original theme's Customer Success messaging, blue and pink palette, hero, feature cards and integration section. The integration visual is rebuilt in HTML/CSS from the original theme concept, with sharp text at every viewport. The current production website is a separate Framer implementation.
 
 ## Development
 

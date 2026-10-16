@@ -1,0 +1,56 @@
+[
+  {
+    "name": "testimonials",
+    "label": "Testimonials",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 12,
+      "default": 2
+    },
+    "children": [
+      {
+        "name": "quote",
+        "label": "Quote",
+        "type": "text",
+        "default": "",
+        "required": true
+      },
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "default": "",
+        "required": true
+      },
+      {
+        "name": "role",
+        "label": "Role",
+        "type": "text",
+        "default": "",
+        "required": true
+      },
+      {
+        "name": "company",
+        "label": "Company",
+        "type": "text",
+        "default": "",
+        "required": true
+      }
+    ],
+    "default": [
+      {
+        "quote": "We tried several competitors to Startdeliver but none could compare in the flexibility. We wanted a dynamic easy to use tool with the possibility of adding integrations as we develop and switch between different solutions.",
+        "name": "Mattias \u00d6sterberg",
+        "role": "Product Manager",
+        "company": "Flowbox"
+      },
+      {
+        "quote": "Start Deliver makes the difference between good and bloody brilliant",
+        "name": "Garett Love",
+        "role": "Head of Customer Success",
+        "company": "Learnifier"
+      }
+    ]
+  }
+]

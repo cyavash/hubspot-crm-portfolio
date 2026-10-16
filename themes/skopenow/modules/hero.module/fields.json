@@ -1,0 +1,16 @@
+[
+  {
+    "name": "heading",
+    "label": "Heading",
+    "type": "text",
+    "default": "A clearer picture.",
+    "required": true
+  },
+  {
+    "name": "accent",
+    "label": "Accent heading",
+    "type": "text",
+    "default": "A stronger investigation.",
+    "required": true
+  }
+]

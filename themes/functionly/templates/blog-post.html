@@ -1,0 +1,32 @@
+<!--
+templateType: blog_post
+isAvailableForNewContent: true
+label: Functionly Editorial Article
+-->
+{% extends './layouts/base.html' %}
+{% block body %}
+<article class="longform">
+ <header class="article-header">
+  <a href="{{ group.absolute_url|escape_url }}">
+   ← All articles
+  </a>
+  <h1>
+   {{ content.name|escape_html }}
+  </h1>
+  {% if content.blog_post_author %}
+  <p class="byline">
+   {{ content.blog_post_author.display_name|escape_html }}
+  </p>
+  {% endif %}
+  <time datetime="{{ content.publish_date|datetimeformat('%Y-%m-%d')|escape_attr }}">
+   {{ content.publish_date|datetimeformat('%B %e, %Y')|escape_html }}
+  </time>
+ </header>
+ {% if content.featured_image %}
+ <img alt="{{ content.featured_image_alt_text|default('')|escape_attr }}" class="article-hero" height="675" src="{{ content.featured_image|escape_url }}" width="1200"/>
+ {% endif %}
+ <div class="article-body">
+  {{ content.post_body }}
+ </div>
+</article>
+{% endblock body %}

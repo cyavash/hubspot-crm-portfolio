@@ -1,0 +1,47 @@
+<!-- templateType: none -->
+<!DOCTYPE html>
+<html lang="{{ html_lang|default('en')|escape_attr }}" {{ html_lang_dir }}>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   {{ page_meta.html_title|default(content.name)|escape_html }}
+  </title>
+  {% if page_meta.meta_description %}
+  <meta content="{{ page_meta.meta_description|escape_attr }}" name="description"/>
+  {% endif %}{{ require_css(get_asset_url('../../css/main.css')) }}{{ standard_header_includes }}
+ </head>
+ <body>
+  <a class="skip" href="#main">
+   Skip to content
+  </a>
+  <header class="site-header">
+   <a class="brand" href="/">
+    SKOPENOW
+   </a>
+   <nav aria-label="Product navigation">
+    <a href="#capabilities">
+     Capabilities
+    </a>
+    <a href="#workflow">
+     Workflow
+    </a>
+    <a href="#questions">
+     Questions
+    </a>
+   </nav>
+   <a class="button" href="https://www.skopenow.com/contact">
+    Talk to our team ↗
+   </a>
+  </header>
+  <main id="main">
+   {% block body %}{% endblock body %}
+  </main>
+  <footer>
+   <p>
+    Skopenow
+   </p>
+  </footer>
+  {{ require_js(get_asset_url('../../js/interactions.js'), {'position':'footer','defer':true}) }}{{ require_js(get_asset_url('../../js/tabs.js'), {'position':'footer','defer':true}) }}{{ standard_footer_includes }}
+ </body>
+</html>
