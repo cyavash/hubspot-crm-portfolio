@@ -1,2 +1,56 @@
 <!-- templateType: none -->
-<!doctype html><html lang="{{ html_lang|default('en')|escape_attr }}" {{ html_lang_dir }}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{ page_meta.html_title|default(content.name)|escape_html }}</title>{% if page_meta.meta_description %}<meta name="description" content="{{ page_meta.meta_description|escape_attr }}">{% endif %}{{ require_css(get_asset_url('../../css/main.css')) }}{{ standard_header_includes }}</head><body><a class="skip" href="#main">Skip to content</a><header><a class="logo" href="/">START<span>DELIVER</span><span aria-hidden="true" class="dot">.</span></a><nav aria-label="Main navigation"><a href="#platform">Platform</a><a href="#integrations">Integrations</a><a href="#integrations">Connected data</a></nav><a class="button small" href="https://www.startdeliver.com/get-a-demo">Get a demo ↗</a></header><main id="main">{% block body %}{% endblock body %}</main><footer><p>StartDeliver</p><a href="/">Home</a></footer>{{ standard_footer_includes }}</body></html>
+<!DOCTYPE html>
+<html html_lang_dir="" lang="{{ html_lang|default('en')|escape_attr }}" {{="" }}="">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   {{ page_meta.html_title|default(content.name)|escape_html }}
+  </title>
+  {% if page_meta.meta_description %}
+  <meta content="{{ page_meta.meta_description|escape_attr }}" name="description"/>
+  {% endif %}{{ require_css(get_asset_url('../../css/main.css')) }}{{ standard_header_includes }}
+ </head>
+ <body>
+  <a class="skip" href="#main">
+   Skip to content
+  </a>
+  <header>
+   <a class="logo" href="/">
+    START
+    <span>
+     DELIVER
+    </span>
+    <span aria-hidden="true" class="dot">
+     .
+    </span>
+   </a>
+   <nav aria-label="Main navigation">
+    <a href="#platform">
+     Platform
+    </a>
+    <a href="#integrations">
+     Integrations
+    </a>
+    <a href="#integrations">
+     Connected data
+    </a>
+   </nav>
+   <a class="button small" href="https://www.startdeliver.com/get-a-demo">
+    Get a demo ↗
+   </a>
+  </header>
+  <main id="main">
+   {% block body %}{% endblock body %}
+  </main>
+  <footer>
+   <p>
+    StartDeliver
+   </p>
+   <a href="/">
+    Home
+   </a>
+  </footer>
+  {{ standard_footer_includes }}
+ </body>
+</html>

@@ -1,1 +1,33 @@
-<section class="platform" id="platform"><div class="section-heading"><p class="eyebrow">KEY FEATURES</p><h2>Fewer headaches.<br/>More customer progress.</h2><p>See the signals that matter, prioritize the right conversations, and keep your team moving together.</p></div><div class="feature-grid">{% for item in module.items %}<article><span class="index">{{ loop.index|string|escape_html }}</span><h3>{{ item.heading|escape_html }}</h3><p>{{ item.description|escape_html }}</p><span class="tag">{{ item.label|escape_html }}</span></article>{% endfor %}</div></section>
+<section class="platform" id="platform">
+ <div class="section-heading">
+  <p class="eyebrow">
+   KEY FEATURES
+  </p>
+  <h2>
+   Fewer headaches.
+   <br/>
+   More customer progress.
+  </h2>
+  <p>
+   See the signals that matter, prioritize the right conversations, and keep your team moving together.
+  </p>
+ </div>
+ <div class="feature-grid">
+  {% for item in module.items %}
+  <article>
+   <span class="index">
+    {{ loop.index|string|escape_html }}
+   </span>
+   <h3>
+    {{ item.heading|escape_html }}
+   </h3>
+   <p>
+    {{ item.description|escape_html }}
+   </p>
+   <span class="tag">
+    {{ item.label|escape_html }}
+   </span>
+  </article>
+  {% endfor %}
+ </div>
+</section>
