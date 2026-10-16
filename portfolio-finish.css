@@ -514,3 +514,8 @@ footer {
     scroll-behavior:auto!important
   }
 }
+
+/* Retain original project imagery alongside the implementation preview. */
+.db-website { max-width:1100px; margin:64px auto 0; padding:0 5%; }
+.db-website img { display:block; width:100%; height:auto; border:1px solid #dce3e1; border-radius:12px; box-shadow:0 24px 60px -36px #04142f80; }
+.db-website figcaption { margin-top:14px; color:#52665d; font-size:.8rem; }
