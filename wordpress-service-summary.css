@@ -9,7 +9,27 @@
   background: #f4f7fc;
   color: #152d53;
 }
-.siavash-service-summary h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.25rem); line-height: 1.2; }
-.siavash-service-summary p { margin: 0; color: #4c607d; line-height: 1.75; }
-.siavash-service-summary__link { justify-self: start; display: inline-flex; gap: .5rem; align-items: center; min-block-size: 44px; color: #254f91; text-decoration: underline; text-underline-offset: .25em; }
-.siavash-service-summary__link:focus-visible { outline: 3px solid #254f91; outline-offset: 5px; }
+.siavash-service-summary h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.2;
+}
+.siavash-service-summary p {
+  margin: 0;
+  color: #4c607d;
+  line-height: 1.75;
+}
+.siavash-service-summary__link {
+  justify-self: start;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  min-block-size: 44px;
+  color: #254f91;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+.siavash-service-summary__link:focus-visible {
+  outline: 3px solid #254f91;
+  outline-offset: 5px;
+}

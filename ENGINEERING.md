@@ -6,7 +6,7 @@ The studio runs as static HTML, CSS and native JavaScript. No client framework o
 
 Ten case previews were rendered at 1560px desktop and 390px mobile widths. The captured pages had no document overflow, JavaScript exceptions or axe WCAG A/AA violations in the configured checks. Interactive checks cover qualification steps, inbox filtering and language context, intake search and CRM record selection. Automated checks do not establish full WCAG conformance.
 
-The native UI reference includes 10 DOM behavior tests for scoped disclosures, keyboard tabs, literal search, filters, dialogs and navigation. The studio is frontend-only and does not submit forms to client systems.
+The native UI reference includes 10 DOM behavior tests and 12 quote billing/option combinations for scoped disclosures, keyboard tabs, literal search, filters, dialogs and navigation. The studio is frontend-only and does not submit forms to client systems.
 
 ## Deployment boundaries
 
