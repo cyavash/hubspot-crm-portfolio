@@ -1,0 +1,37 @@
+[
+  {
+    "name": "eyebrow",
+    "label": "Eyebrow",
+    "type": "text",
+    "default": "BUILT AROUND YOUR CUSTOMERS",
+    "required": true
+  },
+  {
+    "name": "heading",
+    "label": "Heading",
+    "type": "text",
+    "default": "Finally, a platform",
+    "required": true
+  },
+  {
+    "name": "bridge",
+    "label": "Bridge",
+    "type": "text",
+    "default": "made for",
+    "required": true
+  },
+  {
+    "name": "accent",
+    "label": "Accent",
+    "type": "text",
+    "default": "Customer Success.",
+    "required": true
+  },
+  {
+    "name": "description",
+    "label": "Description",
+    "type": "text",
+    "default": "Traditional CRMs are not built for Customer Success. Find out exactly when and how to reach out to your customers to avoid churn and increase CSAT.",
+    "required": true
+  }
+]

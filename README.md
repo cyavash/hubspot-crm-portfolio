@@ -76,7 +76,7 @@ Figma design and responsive HubSpot email development across five reusable forma
 
 HubSpot CMS implementation with reusable modules, native navigation, accessible interactions and maintainable source.
 
-[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/startdeliver.html) · [Case and role](startdeliver.md) · [Code](startdeliver.html)
+[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/startdeliver.html) · [Case and role](startdeliver.md) · [HubL source](themes/startdeliver)
 
 ## Skopenow
 

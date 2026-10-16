@@ -1,0 +1,52 @@
+[
+  {
+    "name": "items",
+    "label": "Feature cards",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 3
+    },
+    "children": [
+      {
+        "name": "heading",
+        "label": "Heading",
+        "type": "text",
+        "default": "Feature",
+        "required": true
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "type": "text",
+        "default": "Describe the customer benefit.",
+        "required": true
+      },
+      {
+        "name": "label",
+        "label": "Label",
+        "type": "text",
+        "default": "Customer Success",
+        "required": true
+      }
+    ],
+    "default": [
+      {
+        "heading": "Understand usage.",
+        "description": "Find out how active your customers are. Talk to the right customers first.",
+        "label": "Customer activity"
+      },
+      {
+        "heading": "Improve onboarding.",
+        "description": "Help customers reach value sooner with clear next steps and a connected view of their journey.",
+        "label": "Time to value"
+      },
+      {
+        "heading": "Spot the next opportunity.",
+        "description": "See what triggers churn and identify where your team can strengthen the relationship.",
+        "label": "Retention & growth"
+      }
+    ]
+  }
+]

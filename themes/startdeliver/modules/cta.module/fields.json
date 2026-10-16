@@ -1,0 +1,9 @@
+[
+  {
+    "name": "heading",
+    "label": "Heading",
+    "type": "text",
+    "default": "Customer Success, with a clearer next step.",
+    "required": true
+  }
+]

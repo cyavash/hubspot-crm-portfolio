@@ -1,0 +1,9 @@
+[
+  {
+    "name": "heading",
+    "label": "Heading",
+    "type": "text",
+    "default": "Track customers better. Help them better.",
+    "required": true
+  }
+]

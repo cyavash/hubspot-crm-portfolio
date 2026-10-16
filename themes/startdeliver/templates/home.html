@@ -1,0 +1,12 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: StartDeliver Homepage Refresh
+-->
+{% extends './layouts/base.html' %}
+{% block body %}
+{% module 'hero' path='../modules/hero', label='Homepage hero' %}
+{% module 'features' path='../modules/features', label='Feature cards' %}
+{% module 'integrations' path='../modules/integrations', label='Connected customer data' %}
+{% module 'cta' path='../modules/cta', label='Closing call to action' %}
+{% endblock body %}

@@ -1,17 +1,17 @@
 # StartDeliver
 
-HubSpot website development
+HubSpot homepage design and development
 
-![StartDeliver preview](startdeliver-preview.webp)
+![Rendered homepage](startdeliver-preview.webp)
 
-**[Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/startdeliver.html) · [Source code](https://github.com/cyavash/StartDeliver) · [Portfolio](https://siavash.tech/)**
-
-HubSpot CMS implementation with reusable modules, native navigation, accessible interactions and maintainable source.
+**[Live homepage preview](https://cyavash.github.io/hubspot-crm-portfolio/startdeliver.html) · [HubL homepage source](themes/startdeliver) · [Original theme repository](https://github.com/cyavash/StartDeliver)**
 
 ## My role
 
-HubSpot CMS development and custom modules. This public redesign demonstrates the maintained source direction; the current client website may use a different platform.
+HubSpot theme development and custom modules. This refreshed homepage builds on the original theme's Customer Success messaging, blue and pink palette, hero, feature cards and integration section. The integration graphic is from the original theme. The current production website is a separate Framer implementation.
 
-## Public build
+## Development
 
-The coded preview uses sample interface states. Private client records, workflow rules and credentials are excluded. Native JavaScript, responsive layouts, semantic markup, keyboard access and reduced-motion support are documented and checked.
+The focused homepage package includes a shared HubL layout, editable hero content, a feature repeater, integration and CTA modules, local artwork and responsive CSS. It uses semantic HTML, visible keyboard focus and reduced motion support without jQuery. The GitHub Pages preview renders the corresponding static page.
+
+Static desktop/mobile accessibility and overflow checks pass. HubL compilation and editor behavior still require validation in a HubSpot test portal. See the [package guide](themes/startdeliver/README.md).
