@@ -4441,3 +4441,7 @@ html {
     font-size: 11px;
   }
 }
+
+/* Show direct project captures without clipping their top navigation. */
+.index-card img { object-position:top; }
+.index-card-links { flex-wrap:wrap; }
