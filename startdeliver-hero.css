@@ -1,0 +1,13 @@
+/* Original product artwork grounds the banner in StartDeliver's platform. */
+.hero-with-visual { display:grid; grid-template-columns:1.05fr 1fr; gap:40px; text-align:left; padding:65px max(5%,calc((100% - 1260px)/2)) 0; align-items:center; }
+.hero-copy { min-width:0; }
+.hero-with-visual h1 { font-size:clamp(40px,4.4vw,65px); margin:22px 0; line-height:1.07; letter-spacing:-.055em; max-width:680px; }
+.hero-with-visual .lead { margin:24px 0; font-size:17px; max-width:540px; }
+.hero-with-visual .actions { justify-content:flex-start; gap:24px; margin:30px 0 15px; flex-wrap:wrap; }
+.hero-visual { width:100%; min-width:0; margin:0; padding:22px 14px 18px; background:radial-gradient(ellipse at 70% 15%,#fff 10%,transparent 65%),linear-gradient(145deg,#e8eaff,#f8eff8); border:1px solid #e3e5f6; border-radius:24px; box-shadow:0 25px 70px -45px #1647b67a; }
+.hero-visual img { width:100%; height:auto; display:block; }
+.hero-visual figcaption { font-size:11px; color:#657396; text-align:center; margin:0 15px 5px; }
+.hero-with-visual .outcomes { grid-column:1/-1; width:100%; margin-top:20px; text-align:left; }
+@media(min-width:1500px) { .hero-with-visual { gap:65px; } }
+@media(max-width:900px) { .hero-with-visual { grid-template-columns:1fr; gap:32px; padding-top:40px; } .hero-with-visual h1 { max-width:720px; font-size:clamp(40px,7vw,62px); } .hero-with-visual .lead { max-width:660px; } .hero-visual { max-width:700px; margin:auto; } .hero-with-visual .outcomes { margin-top:0; } }
+@media(max-width:500px) { .hero-with-visual { gap:25px; } .hero-with-visual .button { padding:14px 18px; gap:18px; font-size:14px; } .hero-with-visual .text-link { font-size:13px; } .hero-visual { border-radius:15px; padding:16px 8px 12px; } }

@@ -1,0 +1,13 @@
+/* Responsive live component cover: no clipped raster typography. */
+.component-cover { min-height:clamp(275px,30vw,400px); display:flex; flex-direction:column; justify-content:center; padding:clamp(20px,3vw,40px); background:linear-gradient(135deg,#f4f7ef,#e7f1e9); color:#17332e; border-bottom:1px solid #d8e3dc; overflow:hidden; }
+.index-card>a:has(.component-cover) { display:block; text-decoration:none; }
+.component-cover-label { font-size:clamp(8px,.9vw,11px); font-weight:700; letter-spacing:.12em; color:#446b58; }
+.component-cover>strong { display:block; margin:12px 0 23px; font-size:clamp(25px,3vw,42px); line-height:1.05; letter-spacing:-.05em; }
+.component-cover-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.component-cover-grid>span { padding:16px 12px; border:1px solid #d1ded3; border-radius:9px; background:#ffffffd9; }
+.component-cover-grid i { font:700 10px/1 sans-serif; color:#628674; display:block; margin-bottom:12px; }
+.component-cover-grid b { display:block; font-size:clamp(10px,1.2vw,15px); line-height:1.25; }
+.component-cover-grid small { display:block; margin-top:8px; font-size:clamp(8px,.85vw,11px); line-height:1.5; color:#526860; }
+.component-cover-footer { display:flex; gap:12px; flex-wrap:wrap; font-size:clamp(8px,.85vw,11px); color:#426450; margin-top:18px; }
+.component-cover-footer span+span::before { content:"+"; margin-right:12px; color:#73917d; }
+@media(max-width:400px) { .component-cover { padding:20px; } .component-cover-grid { gap:6px; } .component-cover-grid>span { padding:12px 8px; } .component-cover>strong { margin-bottom:18px; } }

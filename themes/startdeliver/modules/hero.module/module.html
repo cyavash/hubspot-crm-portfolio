@@ -1,4 +1,5 @@
-<section class="hero">
+<section class="hero hero-with-visual">
+ <div class="hero-copy">
  <p class="eyebrow">
   {{ module.eyebrow|escape_html }}
  </p>
@@ -27,6 +28,11 @@
    </span>
   </a>
  </div>
+ </div>
+ <figure class="hero-visual">
+ <img src="{{ module.hero_image.src|default(get_asset_url('../../images/startdeliver-platform.png'))|escape_url }}" width="1181" height="719" alt="{{ module.hero_image.alt|default('StartDeliver customer portfolio health and engagement trends')|escape_attr }}" fetchpriority="high"/>
+ <figcaption>One connected view of customer health.</figcaption>
+</figure>
  <div aria-label="Platform outcomes" class="outcomes">
   <p>
    <span>

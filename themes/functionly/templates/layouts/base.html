@@ -15,24 +15,23 @@
   <a class="skip" href="#main">
    Skip to content
   </a>
-  <header class="site-header">
-   <a class="brand" href="/">
-    Functionly
-    <span aria-hidden="true">
-     .
-    </span>
-   </a>
+  <header class="site-header branded-header">
+   <a class="brand" href="https://www.functionly.com/" aria-label="Functionly homepage"><img src="{{ get_asset_url('../../images/functionly-logo.svg') }}" width="178" height="31" alt="Functionly"/></a>
    <nav aria-label="Main navigation">
-    <a href="https://www.functionly.com/orginometry">
-     Orginometry
-    </a>
-    <a href="https://www.functionly.com/orginometry/integrations-keep-your-current-org-charts-up-to-date">
-     Article
-    </a>
+    <a href="https://www.functionly.com/features">Features</a>
+    <a href="https://www.functionly.com/use-cases">Use cases</a>
+    <a href="https://www.functionly.com/pricing">Pricing</a>
+    <details class="nav-resources"><summary>Resources <span aria-hidden="true">&#8964;</span></summary>
+     <div class="resource-links">
+      <a href="{{ group.absolute_url|escape_url }}">Orginometry blog <small>Ideas for better organizations</small></a>
+      <a href="https://www.functionly.com/orginometry/integrations-keep-your-current-org-charts-up-to-date">Featured article <small>Connected organization data</small></a>
+      <a href="https://www.functionly.com/case-studies">Customer stories</a>
+      <a href="https://www.functionly.com/help">Help center</a>
+     </div>
+    </details>
+    <a class="current-blog" href="{{ group.absolute_url|escape_url }}">Orginometry</a>
    </nav>
-   <a class="button" href="https://labs.functionly.com/sign-up">
-    Start free trial ↗
-   </a>
+   <div class="header-actions"><a class="login-link" href="https://labs.functionly.com/">Login</a><a class="button" href="https://labs.functionly.com/sign-up">Free trial <span aria-hidden="true">&#8599;</span></a></div>
   </header>
   <main id="main">
    {% block body %}{% endblock body %}

@@ -9,12 +9,14 @@
       content="Reusable HubSpot components: service cards, native FAQ disclosures and keyboard-accessible tabs. Explore the live interface and inspect the HubL source."
     />
     <link rel="stylesheet" href="hubspot/css/main.css" />
+    <link rel="stylesheet" href="studio-preview.css" />
     <script src="hubspot/modules/content-tabs.module/module.js" defer></script>
   </head>
-  <body>
+  <body class="sz-studio">
     <a class="sz-skip" href="#main-content">Skip to content</a>
+    <nav class="sz-topbar" aria-label="Portfolio"><a href="../index.html">Siavash <span>/ Project studio</span></a><a href="https://github.com/cyavash/hubspot-crm-portfolio/tree/main/components/hubspot">View HubL source &#8599;</a></nav>
     <main id="main-content" class="sz-page">
-      <header class="sz-hero">
+      <header class="sz-hero"><div class="sz-hero-copy">
         <p class="sz-eyebrow">HUBSPOT DEVELOPMENT / COMPONENT STUDIO</p>
         <h1>Reusable by design.</h1>
         <p>
@@ -28,6 +30,12 @@
           >
           · <a href="../index.html">Project studio ↗</a>
         </p>
+        <a class="sz-primary" href="#services">Explore the modules <span aria-hidden="true">&#8595;</span></a>
+        </div>
+        <div class="sz-module-stack" aria-label="Three reusable modules">
+         <div><span class="sz-module-number">01 / CONTENT</span><h2>Built to be edited.</h2><p>Service cards with a clear content hierarchy.</p><span class="sz-chip">Named HubSpot fields</span></div>
+         <div><span class="sz-module-number">02 / INTERACTION</span><h2>Made to work together.</h2><p>Keyboard tabs and native FAQ disclosures.</p><span class="sz-chip">Accessible by default</span></div>
+        </div>
       </header>
       <section id="services" class="sz-section" aria-label="Services">
         <h2>How we can help</h2>

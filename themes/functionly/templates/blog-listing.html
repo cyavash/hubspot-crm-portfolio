@@ -5,24 +5,21 @@ label: Functionly Editorial Listing
 -->
 {% extends './layouts/base.html' %}
 {% block body %}
-<section class="blog-intro">
- <p class="eyebrow">
-  ORGINOMETRY / IDEAS FOR BETTER ORGANIZATIONS
- </p>
- <h1>
-  Better structures.
-  <br/>
-  <span>
-   Bigger possibilities.
-  </span>
- </h1>
- <p>
-  Explore organization design and the decisions that shape how teams work.
- </p>
-</section>
+   <section class="blog-intro branded-intro">
+    <div class="intro-copy">
+     <p class="eyebrow">ORGINOMETRY / THE ART &amp; SCIENCE OF ORG DESIGN</p>
+     <h1>Better structures.<br/><span>Bigger possibilities.</span></h1>
+     <p>Fresh perspectives on organization design, connected data and the people behind your next big move.</p>
+     <a class="intro-link" href="#articles-title">Explore the latest thinking <span aria-hidden="true">&#8595;</span></a>
+    </div>
+    <div class="intro-art" aria-hidden="true">
+     <span class="art-kicker">PEOPLE. PURPOSE. POSSIBILITY.</span>
+     <span class="art-caption">A different perspective<br/>changes everything.</span>
+    </div>
+   </section>
 <section aria-label="Articles" class="blog-content">
  <div class="filter-heading">
-  <h2>
+  <h2 id="articles-title">
    Latest thinking
   </h2>
   <form data-blog-search="" role="search">
