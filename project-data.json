@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "enveseur",
+    "name": "Enveseur",
+    "category": "Service Hub & Breeze AI",
+    "headline": "Support without the handoff gaps.",
+    "summary": "Service Hub architecture, multilingual support, knowledge sources and human escalation.",
+    "live": "https://www.postalpackaging.com/",
+    "stack": "Service Hub \u00b7 Breeze \u00b7 CRM"
+  },
+  {
+    "slug": "functionly",
+    "name": "Functionly",
+    "category": "HubSpot website & reusable modules",
+    "headline": "A website the marketing team can build on.",
+    "summary": "Figma design, HubL development, reusable modules and connected lead capture.",
+    "live": "https://www.functionly.com/",
+    "stack": "Figma \u00b7 HubL \u00b7 HubSpot CMS"
+  },
+  {
+    "slug": "databiologics",
+    "name": "DataBiologics",
+    "category": "WordPress & HubSpot CRM",
+    "headline": "A better website. A clearer customer journey.",
+    "summary": "WordPress design and development connected to HubSpot CRM, lifecycle tracking and reporting.",
+    "live": "https://www.databiologics.com/",
+    "stack": "WordPress \u00b7 HubSpot \u00b7 Data quality"
+  },
+  {
+    "slug": "bbwa",
+    "name": "Building Brokers WA",
+    "category": "Qualification & CRM automation",
+    "headline": "A simpler path from enquiry to conversation.",
+    "summary": "A four-step qualification journey with HubSpot, automated follow-up and meeting booking.",
+    "live": "https://buildingbrokerswa.com.au/",
+    "stack": "WordPress \u00b7 HubSpot \u00b7 Breeze"
+  },
+  {
+    "slug": "rmdy",
+    "name": "RMDY Academy",
+    "category": "Connected intake & clean CRM records",
+    "headline": "Every application, connected correctly.",
+    "summary": "Zapier and HubSpot intake matching, create/update controls and submission associations.",
+    "live": "https://siavash.tech/#work",
+    "stack": "Zapier \u00b7 HubSpot \u00b7 Integrations"
+  },
+  {
+    "slug": "kaplan-law",
+    "name": "Kaplan Law",
+    "category": "CRM intake & follow-up",
+    "headline": "Clarity from the first enquiry.",
+    "summary": "A concise legal-services CRM workspace and intake handoff preview.",
+    "live": "https://siavash.tech/#work",
+    "stack": "CRM architecture \u00b7 Intake \u00b7 Ownership"
+  },
+  {
+    "slug": "quote",
+    "name": "DataBiologics Quote",
+    "category": "Interactive quote & HubL reference",
+    "headline": "Complex pricing. Clear decisions.",
+    "summary": "A branded quote reference with billing choices, optional services and print layouts.",
+    "live": "https://siavash.tech/databiologics-quote/",
+    "stack": "HubL \u00b7 JavaScript \u00b7 Quote pricing"
+  },
+  {
+    "slug": "email",
+    "name": "The National College",
+    "category": "HubSpot email design & development",
+    "headline": "Five templates. One coherent experience.",
+    "summary": "Figma design and responsive HubSpot email development across five reusable formats.",
+    "live": "https://siavash.tech/#neg",
+    "stack": "Figma \u00b7 HubSpot Email \u00b7 HTML & HubL"
+  },
+  {
+    "slug": "startdeliver",
+    "name": "StartDeliver",
+    "category": "HubSpot website development",
+    "headline": "A clearer journey. A stronger connection.",
+    "summary": "HubSpot CMS implementation with reusable modules, native navigation, accessible interactions and maintainable source.",
+    "live": "https://www.startdeliver.com/",
+    "stack": "HubSpot CMS \u00b7 HubL \u00b7 Native JavaScript"
+  },
+  {
+    "slug": "skopenow",
+    "name": "Skopenow",
+    "category": "HubSpot website development",
+    "headline": "Bring complex signals into a clearer view.",
+    "summary": "HubSpot layouts and custom modules with native JavaScript, semantic structure and practical content editing.",
+    "live": "https://www.skopenow.com/",
+    "stack": "HubSpot CMS \u00b7 HubL \u00b7 Native JavaScript"
+  }
+]

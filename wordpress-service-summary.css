@@ -1,0 +1,15 @@
+/* Scoped to this component so a host theme retains ownership of global styles. */
+.siavash-service-summary {
+  display: grid;
+  gap: 1rem;
+  max-inline-size: 42rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid #dce4f0;
+  border-radius: 1rem;
+  background: #f4f7fc;
+  color: #152d53;
+}
+.siavash-service-summary h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.25rem); line-height: 1.2; }
+.siavash-service-summary p { margin: 0; color: #4c607d; line-height: 1.75; }
+.siavash-service-summary__link { justify-self: start; display: inline-flex; gap: .5rem; align-items: center; min-block-size: 44px; color: #254f91; text-decoration: underline; text-underline-offset: .25em; }
+.siavash-service-summary__link:focus-visible { outline: 3px solid #254f91; outline-offset: 5px; }

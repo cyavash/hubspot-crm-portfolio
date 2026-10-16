@@ -1,0 +1,195 @@
+/* Native interaction layer. Scoped overrides keep legacy content and branding. */
+[hidden] {
+  display: none !important;
+}
+:focus-visible {
+  outline: 3px solid #1763b2 !important;
+  outline-offset: 4px;
+}
+.native-carousel {
+  display: flex !important;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+  scrollbar-width: thin;
+}
+.native-carousel > * {
+  flex: 0 0 min(85%, 36rem);
+  scroll-snap-align: start;
+  min-width: 0;
+}
+.native-carousel img {
+  max-width: 100%;
+  height: auto;
+}
+.native-carousel-controls {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.native-carousel-controls button {
+  border: 1px solid currentColor;
+  border-radius: 0.4rem;
+  padding: 0.65rem 1rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  min-height: 44px;
+}
+.logo-sldr-lr.native-carousel > *,
+.logo-sldr-rt.native-carousel > * {
+  flex-basis: 10rem;
+}
+.native-video-dialog {
+  width: min(90vw, 64rem);
+  max-height: 90dvh;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.75rem;
+  background: #102133;
+  color: white;
+}
+.native-video-dialog::backdrop {
+  background: rgb(0 0 0 / 0.75);
+}
+.native-video-dialog iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.native-video-dialog button {
+  display: block;
+  margin: 0 0 1rem auto;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+}
+button.child-trigger {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+[data-native-disclosure] {
+  cursor: pointer;
+}
+[data-native-disclosure] > button {
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  width: 100%;
+  min-height: 44px;
+}
+.faq-accrodion .accordion-title {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+[data-native-disclosure][aria-expanded="true"] .acc-plus {
+  display: none;
+}
+[data-native-disclosure][aria-expanded="true"] .acc-minus {
+  display: block;
+}
+[data-native-disclosure][aria-expanded="false"] .acc-minus {
+  display: none;
+}
+.native-skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 99999;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  background: #102133;
+  transform: translateY(-200%);
+}
+.native-skip-link:focus {
+  transform: translateY(0);
+}
+.native-carousel > .cs-inner {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .custom-menu-primary li.has-submenu {
+    position: relative;
+  }
+  .custom-menu-primary li.has-submenu > .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 16rem;
+  }
+  .custom-menu-primary li.has-submenu:focus-within > .submenu,
+  .custom-menu-primary li.has-submenu:hover > .submenu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .partner-tabs .tabs-container {
+    display: flex;
+    overflow-x: auto;
+  }
+  .partner-tabs .tabs {
+    flex-wrap: nowrap;
+  }
+  .partner-tabs .tab {
+    white-space: nowrap;
+  }
+  .partner-tabs .tab-pane-heading {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.native-content-dialog {
+  width: min(90vw, 56rem);
+  max-height: 90dvh;
+  overflow: auto;
+  border: 0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+.native-content-dialog::backdrop {
+  background: rgb(0 0 0 / 0.7);
+}
+.native-content-dialog > button {
+  min-height: 44px;
+  display: block;
+  margin-inline-start: auto;
+  margin-bottom: 1rem;
+}
+
+button[data-native-disclosure] {
+  font: inherit;
+  color: inherit;
+  text-align: start;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0;
+  background: transparent;
+  border: 0;
+}
