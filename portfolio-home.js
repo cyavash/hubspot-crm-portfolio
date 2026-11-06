@@ -22,6 +22,7 @@
 
 /** Animate visible content only; never hide content or require motion to navigate. */
 (() => {
+ if (typeof window.matchMedia !== 'function') return;
  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
  if (motion.matches || !('IntersectionObserver' in window) || !Element.prototype.animate) return;
  const observer = new IntersectionObserver(entries => {
