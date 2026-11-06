@@ -19,3 +19,20 @@
  }));
  toolbar.hidden = false;
 })();
+
+/** Animate visible content only; never hide content or require motion to navigate. */
+(() => {
+ const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+ if (motion.matches || !('IntersectionObserver' in window) || !Element.prototype.animate) return;
+ const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+   if (!entry.isIntersecting) return;
+   if (!motion.matches) entry.target.animate(
+    [{transform:'translateY(14px)',opacity:.7},{transform:'translateY(0)',opacity:1}],
+    {duration:460,easing:'cubic-bezier(.2,.7,.2,1)'}
+   );
+   observer.unobserve(entry.target);
+  });
+ }, {threshold:.08});
+ document.querySelectorAll('.section-head,.index-card,.engagement-grid article').forEach(el=>observer.observe(el));
+})();
