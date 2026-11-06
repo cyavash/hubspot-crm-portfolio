@@ -1,10 +1,23 @@
 # HubSpot, CRM & Web Development
 
-**Siavash Zahir — HubSpot Solutions Architect & Developer**
+**Siavash Zahir | HubSpot Solutions Architect & Developer**
 
 CRM architecture, HubL development, WordPress, integrations and email systems. 13+ years across web development, CRM and business systems.
 
 [Explore the live project studio](https://cyavash.github.io/hubspot-crm-portfolio/) · [Portfolio](https://siavash.tech/) · [GitHub Projects](https://github.com/users/cyavash/projects/1)
+
+## Start here
+
+| Your priority | Best starting point |
+| --- | --- |
+| CRM architecture and qualification | [BBWA](bbwa.html) and [qualification logic](qualification.js) |
+| Integration and record matching | [RMDY Academy](rmdy.html) |
+| Service Hub and AI handoff | [Enveseur](enveseur.html) |
+| CMS engineering | [HubL component package](components/hubspot/) and [Functionly](functionly.html) |
+| Implementation quality | [Engineering notes](ENGINEERING.md) and [automated checks](.github/workflows/quality.yml) |
+| Hire an independent specialist | [Discuss your project on Upwork](https://www.upwork.com/freelancers/siavash/) |
+
+I work directly with teams on audits and recovery, scoped implementations and ongoing remote support. Architecture, hands-on delivery, exception testing and documented handover.
 
 ## Enveseur
 
@@ -74,7 +87,7 @@ Figma design and responsive HubSpot email development across five reusable forma
 
 ![StartDeliver preview](startdeliver-preview.webp)
 
-HubSpot CMS implementation with reusable modules, native navigation, accessible interactions and maintainable source.
+Public HubSpot reference build with reusable modules, native navigation and accessible interactions. This sample is separate from the client production website.
 
 [Interactive preview](https://cyavash.github.io/hubspot-crm-portfolio/startdeliver.html) · [Case and role](startdeliver.md) · [HubL source](themes/startdeliver)
 
@@ -103,3 +116,18 @@ Every module has a screenshot, live preview and source link. Also explore the **
 
 Public previews are reference builds, separate from client production websites. Original repository histories remain intact.
 
+
+## Run locally
+
+Serve this folder with any static HTTP server. No application build is required.
+
+With Node.js 24 or later:
+
+```sh
+npm ci --ignore-scripts
+npm run check
+npm test
+node scripts/audit-static.mjs
+```
+
+The [siavash.tech refresh preview](https://cyavash.github.io/hubspot-crm-portfolio/website-preview/) is a separate review build. Publication here does not deploy changes to siavash.tech.
