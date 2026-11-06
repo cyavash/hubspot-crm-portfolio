@@ -2176,3 +2176,7 @@ body.dialog-open {
 @media(max-width:900px){.hiring-grid{grid-template-columns:1fr}.hiring-grid article{padding:28px}.hiring-grid h3{font-size:27px}.case-detail{justify-self:start}.hero{gap:32px}}
 @media(max-width:600px){.hero{padding-top:38px;padding-bottom:36px}.work-controls{gap:7px}.work-controls button{font-size:12px;padding:10px 13px}.work-controls [data-case-count]{width:100%;margin:8px 0 0}.hiring-faq summary{font-size:16px}.hiring-faq{margin-top:42px}}
 @media(prefers-reduced-motion:reduce){.project-media,.system-node{transition:none!important;transform:none!important}}
+
+.contact-enquiry { margin-top: 24px; }
+.contact-enquiry summary { cursor:pointer; font-size:14px; padding:12px 0; }
+.contact-form-card .form-fallback { font-size:14px; margin-bottom:20px; }
