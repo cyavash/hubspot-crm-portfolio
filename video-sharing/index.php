@@ -21,6 +21,8 @@ function valid_id(string $s): bool { return (bool)preg_match('/^[a-f0-9]{32}$/D'
 function fail(string $s, int $code=400): never { respond(['error'=>$s], $code); }
 $action = (string)($_GET['action'] ?? '');
 $videoId = (string)($_GET['v'] ?? $_GET['id'] ?? '');
+$requestedSpeed = filter_var($_GET['speed'] ?? 1, FILTER_VALIDATE_FLOAT);
+$defaultSpeed = in_array($requestedSpeed, [0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0], true) ? $requestedSpeed : 1.0;
 header('X-Content-Type-Options: nosniff');
 header('Referrer-Policy: no-referrer');
 header('X-Robots-Tag: noindex, nofollow, noarchive');
@@ -139,7 +141,7 @@ body{background:#f3f5f3}header{max-width:1370px;padding:23px 30px;border-bottom:
 <p class="eyebrow">Shared walkthrough</p><h1><?=esc($video['title'])?></h1><p>Prepared by Siavash Zahir</p>
 <div class="watch-meta"><div class="author"><span class="avatar">SZ</span><div><strong>Siavash Zahir</strong><small>HubSpot &amp; CRM walkthrough</small></div></div><div class="tools"><span id="notice" role="status"></span><button class="primary share-button" data-copy="<?=$base?>?v=<?=esc($videoId)?>">Copy video link</button></div></div>
 <div class="player" id="player"><div class="stage"><video id="video" controls playsinline preload="metadata" tabindex="0" aria-label="<?=esc($video['title'])?>"><source src="<?=$base?>?action=media&amp;id=<?=esc($videoId)?>" type="<?=esc($video['mime'])?>">Your browser cannot play this video.</video><button id="centerPlay" class="center-play" aria-label="Play video" hidden>Play video</button></div>
-<div class="player-controls" id="playerControls" hidden><input id="seek" type="range" min="0" max="100" step="0.05" value="0" aria-label="Seek video"><div class="control-row"><div class="tools"><button id="playPause" aria-label="Play">Play</button><button id="backTen" aria-label="Rewind 10 seconds">-10s</button><span class="time" id="time">0:00 / 0:00</span></div><div class="tools"><button id="mute" aria-label="Mute">Sound on</button><input id="volume" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volume"><label for="speed" class="sr-only">Playback speed</label><select id="speed" aria-label="Playback speed"><option value="0.5">0.5x</option><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option><option value="1.5">1.5x</option><option value="1.75">1.75x</option><option value="2">2x</option></select><button id="fullscreen" aria-label="Fullscreen">Fullscreen</button></div></div></div></div>
+<div class="player-controls" id="playerControls" hidden><input id="seek" type="range" min="0" max="100" step="0.05" value="0" aria-label="Seek video"><div class="control-row"><div class="tools"><button id="playPause" aria-label="Play">Play</button><button id="backTen" aria-label="Rewind 10 seconds">-10s</button><span class="time" id="time">0:00 / 0:00</span></div><div class="tools"><button id="mute" aria-label="Mute">Sound on</button><input id="volume" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volume"><label for="speed" class="sr-only">Playback speed</label><select id="speed" aria-label="Playback speed"><option value="0.5" <?=$defaultSpeed===0.5?'selected':''?>>0.5x</option><option value="0.75" <?=$defaultSpeed===0.75?'selected':''?>>0.75x</option><option value="1" <?=$defaultSpeed===1.0?'selected':''?>>1x</option><option value="1.25" <?=$defaultSpeed===1.25?'selected':''?>>1.25x</option><option value="1.5" <?=$defaultSpeed===1.5?'selected':''?>>1.5x</option><option value="1.75" <?=$defaultSpeed===1.75?'selected':''?>>1.75x</option><option value="2" <?=$defaultSpeed===2.0?'selected':''?>>2x</option></select><button id="fullscreen" aria-label="Fullscreen">Fullscreen</button></div></div></div></div>
 <div class="viewer-foot"><span>Use Space to pause. Arrow keys skip 5 seconds.</span><span>Shared by Siavash</span></div>
 <p id="playerror" class="status error" role="alert"></p>
 <?php elseif($videoId): ?><div class="panel narrow"><h1>Video unavailable</h1><p>Check the link with the person who shared this video.</p></div>
@@ -156,12 +158,12 @@ body{background:#f3f5f3}header{max-width:1370px;padding:23px 30px;border-bottom:
 <script nonce="<?=$nonce?>">
 const csrf=<?=json_encode($csrf)?>;
 const notice=document.querySelector('#notice');
-async function copyLink(value,button){const url=new URL(value,location.origin).href;try{await navigator.clipboard.writeText(url);if(notice)notice.textContent='Link copied';const old=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=old,1800);}catch{prompt('Copy this video link:',url);}}
+async function copyLink(value,button){const shared=new URL(value,location.origin);const selected=document.querySelector('#speed');if(selected&&Number(selected.value)!==1)shared.searchParams.set('speed',selected.value);const url=shared.href;try{await navigator.clipboard.writeText(url);if(notice)notice.textContent='Link copied';const old=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=old,1800);}catch{prompt('Copy this video link:',url);}}
 document.addEventListener('click',e=>{const button=e.target.closest('[data-copy]');if(button)copyLink(button.dataset.copy,button);});
 const video=document.querySelector('#video');
 if(video){
 const player=document.querySelector('#player'),play=document.querySelector('#playPause'),center=document.querySelector('#centerPlay'),seek=document.querySelector('#seek'),time=document.querySelector('#time'),mute=document.querySelector('#mute'),volume=document.querySelector('#volume');
-video.controls=false;document.querySelector('#playerControls').hidden=false;center.hidden=false;
+video.defaultPlaybackRate=Number(document.querySelector('#speed').value);video.playbackRate=video.defaultPlaybackRate;video.controls=false;document.querySelector('#playerControls').hidden=false;center.hidden=false;
 const clock=t=>Number.isFinite(t)?Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0'):'0:00';
 function update(){const duration=video.duration||0;time.textContent=clock(video.currentTime)+' / '+clock(duration);seek.value=duration?video.currentTime/duration*100:0;seek.setAttribute('aria-valuetext',clock(video.currentTime)+' of '+clock(duration));seek.style.setProperty('--played',seek.value+'%');}
 async function toggle(){try{if(video.paused)await video.play();else video.pause();}catch{document.querySelector('#playerror').textContent='Playback could not start. Please try again.';}}
